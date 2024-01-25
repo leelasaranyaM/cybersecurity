@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "flask": "^0.2.10",
+    "react-icons": "^5.0.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-spinners": "^0.13.8"
+  }
+}
