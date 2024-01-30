@@ -1,7 +1,7 @@
 import requests
 from cryptography.fernet import Fernet
 import json
-import time
+import time,random
 
 # Load encryption key from the file
 with open('key.key', 'rb') as key_file:
@@ -9,7 +9,7 @@ with open('key.key', 'rb') as key_file:
 
 cipher_suite = Fernet(key)
 
-solar_energy_production = [142, 247, 309, 17, 3, 500, 40, 40, 20, 100,100, 200, 300, 10, 3, 500, 40, 40, 20, 100, 15, 55, 98, 235, 241]
+solar_energy_production = [random.randint(1, 500) for _ in range(24)]
 smart_controller_url = 'http://127.0.0.1:5005'
 step = 0
 
